@@ -47,6 +47,44 @@ div h1{
 span{
     color: orange;
 }
+
+@media (max-width:100px) 
+{
+    nav{
+        height: 80px;
+    }    
+    .nav-image h1{
+        font-size: 20px;
+    }
+    input{
+        width: 250px;
+        height: 30px;
+    }
+    .nav-search i{
+        margin-left: -20px;
+        padding: 7px;
+
+    }
+}
+@media (max-width:400px) {
+    nav{
+        height: 60px;
+
+    }
+    .nav-image h1{
+        font-size: 16px;
+    }
+    
+    input{
+        width: 170px;
+        height: 25px;
+    }
+
+    .nav-search i{
+        margin-left: -15px;
+        padding: 5px;
+    }
+}
 .home{
     display: grid;
     grid-template-columns: 25% 75%;
