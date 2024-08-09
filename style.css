@@ -209,15 +209,23 @@ span{
     }
     .categories{
         padding: 5px;
-        height: 70px;
-
+        /* height: 70px; */
+        
     }
     .categories h2{
-        font-size: 7px;
+        font-size: 18px;
         padding: 2px;
         margin-top: 2px;
+    
     }
 
+    .categories li{
+        list-style-type: none;
+        padding: 4px 0;
+        padding-left: 5px;
+        font-size: 12px;
+    
+    }
     #mob-heading{
         margin-top: 80px;
         margin-bottom: 10px;
@@ -243,7 +251,26 @@ span{
     }
     .mobiles span p{
         font-size: medium;
-    };
+    }
+    
+    .laptops{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: space-around;
+    }
+
+    .laptops div{
+        margin-bottom: 10px;
+    }
+
+    .laptops div img{
+        height: 170px;
+        width: 180px;
+        border-radius: 5px;
+        margin: 10px;
+        margin-bottom: 5px;
+        background-color: transparent;
+    }
 }
 @media (max-width:400px) {
     nav{
@@ -298,5 +325,32 @@ span{
     .mobiles{
         grid-template-columns: 50% 50%;
         justify-content: space-around;
+    }
+
+    #laptop-heading{
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding: 20px 20px;
+        font-size: 2.5vh;
+    }
+    .laptops{
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: space-around;
+    }
+
+    .laptops .notify{
+        width: 80px;
+        height: 20px;
+    }
+
+    .laptops .notify p{
+        padding-top: 3px;
+        font-size: 2vh;
+    }
+    .laptops h4{
+        font-size: 2vh;
+        padding-top: 3px;
+        padding-bottom: 10px;
     }
 }
