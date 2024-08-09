@@ -12,6 +12,8 @@ nav{
     justify-content: space-evenly;
     align-items: center;
     background-color:rgba(99, 3, 114, 0.861);
+    position: sticky;
+    top: 0;
 }
 
 /* .nav-image img{
@@ -51,7 +53,7 @@ span{
 
 .home{
     display: grid;
-    grid-template-columns: 20% 75%;
+    grid-template-columns: 25% 70%;
     margin: 30px 0;
     justify-content: space-evenly;
 }
@@ -88,13 +90,15 @@ span{
     align-items: center;
     color: white;
     background-size: cover;
-    
+    box-shadow: rgb(0, 0, 0,0.35) 0px 5px 10px;
     /* height: 219px; */
 }
 .digital-image img{
     background:transparent;
 }
-
+.digital-image h2{
+    text-align: center;
+}
 
 
 #mob-heading{
@@ -113,10 +117,12 @@ span{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    background-color: #fafafa;
-    border: 1px solid gainsboro;
     text-align: center;
     margin: 10px 0;
+    background-color: #c8e6f6;
+    border: 1px solid #c8e6f6;
+    box-shadow: rgba(0, 0, 0, 0.43) 0px 5px 10px;
+    
 }
 
 .mobiles div img{
@@ -154,6 +160,7 @@ span{
     background-color: #c8e6f6;
     border: 1px solid #c8e6f6;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.43) 0px 5px 10px;
 
 }
 .laptops div img{
@@ -164,8 +171,8 @@ span{
     margin-bottom: 5px;
     background-color: transparent;
 }
-.notify{
-    background-color: #00000078;
+.laptops .notify{
+    background-color: rgb(116, 4, 145);
     color: #fff;
     width: 90px;
     height: 40px;
@@ -174,10 +181,11 @@ span{
     box-shadow: rgb(0, 0, 0,0.35) 0px 5px 10px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    text-align: center;
 
 }
 .notify p{
-    padding-top: 10px;
+    
     font-size: small;
 }
 
@@ -204,7 +212,7 @@ span{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #91b5d3;
+    background-color: #c8e6f6;
     width: 400px;
     height: 200px;
     margin-bottom: 20px;
@@ -229,7 +237,7 @@ footer{
     display: flex;
     justify-content: center;
     margin-top: 70px;
-    background-color: #91b5d3;
+    background-color: #c8e6f6;
 
 }
 
@@ -239,34 +247,44 @@ footer img{
     padding: 10px;
     border-radius: 50%;
 }
+footer img:hover{
+    width: 32px;
+    height: 32px;
+    padding: 12px;
+}
 .allright{
     text-align: center;
-    background-color: #91b5d3;
+    background-color: #c8e6f6;
     padding-top: 10px;
     padding-bottom: 20px;
     color:#292626bb;
     margin-top: 0;
 }
+
+/* .mobiles div:hover{
+    width: 100%;
+} */
 @media (max-width:1000px) 
 {
     nav{
         height: 80px;
+        justify-content: space-between;
     }    
     .nav-image h1{
-        font-size: 18px;
+        font-size: 14px;
     }
     input{
-        width: 250px;
+        width: 200px;
         height: 30px;
     }
     .nav-search i{
         margin-left: -20px;
-        padding: 7px;
+        padding: 3px;
 
     }
     .nav-icon{
         color:#fff;
-        padding: 7px;
+        padding: 3px;
     }
     .categories{
         padding: 5px;
@@ -296,6 +314,7 @@ footer img{
     .mobiles{
         grid-template-columns: 30% 30% 30%;
         justify-content: space-around;
+        margin-bottom: 10px;
 
     }
 
@@ -486,4 +505,11 @@ footer img{
         padding-top: 5px;
         padding-bottom: 10px;
     }
+}
+@media (max-width:600px) {
+    .categories{
+        width: 100%;
+
+    }
+    
 }
